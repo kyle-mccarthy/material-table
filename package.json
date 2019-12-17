@@ -17,7 +17,7 @@
     "lint": "npm run eslint && npm run tsc",
     "eslint": "eslint src/** -c ./configs/.eslintrc",
     "tsc": "tsc --noEmit --lib es6,dom --skipLibCheck types/index.d.ts",
-    "lint:fix": "eslint src/** --fix"
+    "lint:fix": "yarn eslint --fix"
   },
   "husky": {
     "hooks": {

@@ -1,4 +1,4 @@
-import "./utils/polyfill";
+import './utils/polyfill';
 import React from 'react';
 import { defaultProps } from './default-props';
 import { propTypes } from './prop-types';
@@ -26,6 +26,8 @@ const styles = theme => ({
   }
 });
 
-
-export default withStyles(styles, { withTheme: true })(props => <MaterialTable {...props} ref={props.tableRef} />);
+export default withStyles(styles, { withTheme: true })(props => (
+  <MaterialTable {...props} ref={props.tableRef} />
+));
 export * from './components';
+export { resetServerContext } from 'react-beautiful-dnd';
